@@ -1,0 +1,106 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    background-color: #075E54;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Chat container */
+div {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Chat content */
+p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* From/To styles */
+p:first-child {
+    font-weight: bold;
+    color: #075E54;
+}
+
+.msg{
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Date styles */
+.time {
+    font-size: 0.9rem;
+    color: gray;
+    text-align: right;
+}
+
+/* Separator line */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    div {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
+/* Form container styling */
+.new-chat-form {
+    display: flex;
+    justify-content: center; /* Center the button */
+    margin: 20px 0; /* Add some spacing above and below */
+}
+
+/* Button styling */
+.new-chat-button {
+    background-color: #25D366; /* WhatsApp green */
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px; /* Add padding for a larger, clickable button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+.new-chat-button:hover {
+    background-color: #128C7E; /* Darker green for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly larger shadow */
+}
+
+/* Button focus effect */
+.new-chat-button:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.4); /* Add green focus ring */
+}
